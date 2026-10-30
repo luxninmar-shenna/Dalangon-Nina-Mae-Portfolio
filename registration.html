@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippine Advent College - Student Registration</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header {
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h2 {
+            margin: 0;
+            color: darkblue;
+            font-size: 28px;
+        }
+
+        header p {
+            color: gray;
+            margin: 5px;
+        }
+
+        nav {
+            background-color: steelblue;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-weight: bold;
+        }
+
+        nav a :hover {
+            color: skyblue;
+        }
+
+        .admission {
+            background-color: white;
+            color: darkblue;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 750px;
+            margin: 30px auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        .form-box {
+            background-color: lightcyan;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px gray;
+        }
+
+        .row {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: inline-block;
+            width: 170px;
+            font-weight: bold;
+            color: darkblue;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            width: 350px;
+            padding: 7px;
+            border: 1px solid skyblue;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            width: 350px;
+            height: 90px;
+            padding: 9px;
+            border: 1px solid skyblue;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input :focus,
+        select :focus,
+        textarea :focus {
+            outline: none;
+            border: 2px solid steelblue;
+        }
+
+        input[type="radio"] input[type="checkbox"] {
+            accent-color: steelblue;
+        }
+
+        .register {
+            background-color: steelblue;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            margin-left: 170px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .register :hover {
+            background-color: darkblue;
+        }
+
+        .student-table {
+            background-color: white;
+            margin-top: 40px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px gray;
+        }
+
+        .student-table h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: steelblue;
+            color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid skyblue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightcyan;
+        }
+
+        footer h2 {
+            background-color: steelblue;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        footer h2 {
+            margin-bottom: 5px;
+        }
+
+        footer hr {
+            width: 80%;
+            border: 0;
+            border-top: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>PHILIPPINE ADVENT COLLEGE</h2>
+        <P>Student Registration Form</P>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Academics</a>
+        <a href="#">News</a>
+        <a href="#">Campus Tour</a>
+        <a href="#registration" class="register-top">Register</a>
+        <button class="admission">Admission</button>
+    </nav>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+
+        <div class="form-box">
+            <form>
+                <div class="row">
+                    <label>Roll No.:</label>
+                    <input type="text">
+                </div>
+                <div class="row">
+                    <label>First Name:</label>
+                    <input type="text" placeholder="First Name">
+                </div>
+                 <div class="row">
+                    <label>Last Name:</label>
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <div class="row">
+                    <label>Father's Name:</label>
+                    <input type="text">
+                </div>
+                <div class="row">
+                    <label>Mother's Name:</label>
+                    <input type="text">
+                </div>
+                <div class="row">
+                    <label>Date of Birth:</label>
+                    <input type="Date">
+                </div>
+                <div class="row">
+                    <label>Mobile No.:</label>
+                    <input type="text" placeholder="+63">
+                </div>
+                <div class="row">
+                    <label>Email ID:</label>
+                    <input type="email">
+                </div>
+                <div class="row">
+                    <label>Password</label>
+                    <input type="password">
+                </div>
+                <div class="row">
+                    <label>Gender:</label>
+                    <input type="radio" name="gender">
+                    Male
+                    <input type="radio" name="gender">
+                    Female
+                    <input type="radio" name="gender">
+                </div>
+                <div class="row">
+                    <label>Department</label>
+                    <input type="checkbox">
+                    CSE
+                    <input type="checkbox">
+                    IT
+                    <input type="checkbox">
+                    ECE
+                    <input type="checkbox">
+                    Civil
+                    <input type="checkbox">
+                    Mech
+                </div>
+                <div class="row">
+                    <label>Course</label>
+                    <select>
+                        <option>Select Current Course</option>
+                        <option>BS Information Technology</option>
+                        <option>BS Computer Science</option>
+                        <option>BS Education</option>
+                        <option>BS Business Administration</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label>Student Photo</label>
+                    <input type="image" accept="image/*">
+                </div>
+                <div class="row">
+                    <label>Address:</label>
+                    <textarea></textarea>
+                </div>
+                <button class="register" type="submit">
+                </button>
+            </form>
+        </div>
+        <div class="student-table">
+            <h2>Registered Students</h2>
+            <table>
+                <tr>
+                    <th>Roll NO.</th>
+                    <th>Student Name</th>
+                    <th>Course</th>
+                    <th>Gender</th>
+                    <th>City</th>
+                </tr>
+                <tr>
+                    <td>011</td>
+                    <td>Nina Mae Dalangon</td>
+                    <td>BSIT</td>
+                    <td>Female</td>
+                    <td>Siayan</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <h2>PHILIPPINE ADVENT COLLEGE</h2>
+        <P>Student Registration Portal</P>
+        <p>
+            Home
+            About Us
+            Academics
+            News
+            admission
+        </p>
+        <hr>
+        <p>
+            @Philippine Advent College.
+            All Right Reserved.
+        </p>
+    </footer>
+
+</body>
+
+</html>

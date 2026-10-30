@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+
+  <style>
+    body {
+      background-color: #dbeafe;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .container {
+      width: 850px;
+      margin: 20px;
+      background-color: antiquewhite;
+      padding: 50px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px gray;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1e3a8a;
+      margin-bottom: 30px;
+    }
+
+    .row {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: inline-block;
+      width: 160px;
+      font-weight: bold;
+      color: #374151;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Student Registration Form</h1>
+
+    <form>
+      <div class="row">
+        <label>Roll no. :</label>
+        <input type="text">
+      </div>
+
+      <div class="row name">
+        <label>Student Name :</label>
+        <input type="text" placeholder="First name">
+        <input type="text" placeholder="Last name">
+      </div>
+
+      <div class="row">
+        <label>Father's name :</label>
+        <input type="text" placeholder="First name">
+        <input type="text" placeholder="Last name">
+      </div>
+
+      <div class="row">
+        <label>Mother's name :</label>
+        <input type="text" placeholder="First name">
+        <input type="text" placeholder="Last name">
+      </div>
+
+      <div class="row">
+        <label>Date of birth</label>
+        <input type="text" placeholder="Day">
+        <input type="text" placeholder="Month">
+        <input type="text" placeholder="Year">
+        {DD-MM-YYYY}
+      </div>
+
+      <div class="row">
+        <label>Mobile no. :</label>
+        <input type="text" value="+63">
+        <input type="text">
+      </div>
+
+      <div class="row">
+        <label>Email id :</label>
+        <input type="email">
+      </div>
+
+      <div class="row">
+        <label>Password :</label>
+        <input type="password">
+      </div>
+
+      <div class="row">
+        <label>Gender</label>
+        <input type="radio" name="gender">
+        Male
+        <input type="radio" name="gender">
+        Female
+      </div>
+
+      <div class="row">
+        <label>Department :</label>
+        <input type="checkbox"> CSE
+        <input type="checkbox"> IT
+        <input type="checkbox"> ECE
+        <input type="checkbox"> Civil
+        <input type="checkbox"> Mech
+      </div>
+
+      <div class="row">
+        <label>Course :</label>
+        <select>
+          <option>Select Current Course</option>
+          <option>BS Information Technology</option>
+          <option>BS Computer Science</option>
+          <option>BS Education</option>
+          <option>BS Business Administration</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label>Student photo :</label>
+        <input type="file">
+      </div>
+
+      <div class="row">
+        <label>City :</label>
+        <input type="text">
+      </div>
+
+      <div class="row">
+        <label>Address</label>
+        <br>
+        <textarea rows="2" cols="45"></textarea>
+      </div>
+
+      <div class="row">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+
+</body>
+
+</html>
